@@ -1,0 +1,160 @@
+
+html{
+    margin: 0;
+    padding: 0;
+}
+header{
+    text-align: center;
+    font-size: 2rem;
+    margin: -35px 0 0;
+    color: #3d0060;
+    text-shadow: 2px 2px 1px #b45b08;
+}
+body{
+    width: 100%;
+    margin: 0 auto;
+    font-family: "segoe ui light", sans-serif;
+    font-size: 16px;
+    background: linear-gradient(to right, transparent, #f7c95e 10%, #f7c95e 50%, #f7c95e 90%, transparent 100%);
+}
+.shadowBackground{
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+}
+.shadowBackgroundActive{
+    background: black;
+    opacity: 0.7;
+    display: block;
+    z-index: 110;
+    top: 0;
+}
+.finish{
+    width: 460px;
+    height: 250px;
+    font-size: 4rem;
+    color: #7b043d;
+    position: absolute;
+    background: radial-gradient(ellipse, #e7cb59,#b4fa89, transparent);
+    position: absolute;
+    display: none;
+    text-align: center;
+    font-weight: 900;
+    border-radius: 30px;
+    text-shadow: 2px 2px 1px #2d1515;
+}
+.finishActive{
+    z-index: 120;
+    display: block;
+     opacity: 1;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.reload{
+    display: block;
+    width: 120px;
+    height: 60px;
+    margin: 10px auto 0;
+    border: none;
+    border-radius: 10px;
+    background: #3a0303;
+    color: #ecfbac;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.reload:hover{
+    box-shadow: 2px 2px 1px #2d1515;
+    background: #6e0b0b;
+}
+main{
+    position: relative;
+}
+#leftArrow,
+#rightArrow{
+    display: block;
+}
+#playground{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row nowrap;
+    margin-top: 110px;
+}
+.firstSlider,
+.secondSlider{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: row nowrap;
+    margin: 0 auto;
+    opacity: 0;
+    z-index: 10;
+    position: absolute; 
+}
+.firstSlider{
+    top: -105px;
+}
+.secondSlider{
+    top: 420px;
+}
+
+.onePazzle{
+    width: 100px;
+    height: 100px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2px;
+    background: #f49843;
+}
+.onePazzle > img{
+    display: block;
+}
+
+#mainImage{
+    background-image: url(../images/malisharikiNew/setkaBrown.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 588px;
+    height: 400px;
+    border-radius: 20px;
+    margin: 10px 0;
+    position: relative;
+}
+.mainImage{
+    border: 3px solid transparent;
+    transition: all 2s ease;
+}
+.successful{
+    border: 3px solid green;
+    transition: all 0s ease;
+}
+.unSuccessful{
+    border: 3px solid red;
+    transition: all 0s ease;
+    
+}
+.activeSlider{
+    opacity: 1;
+    z-index: 100;
+}
+.activePazzle{
+    border: 2px solid blue;
+}
+.topLeftCorner{
+   border-radius: 20px 0 0;  
+}
+.topRightCorner{
+   border-radius: 0 20px 0 0;
+}
+.lowerLeftCorner{
+    border-radius: 0 0 0 20px;
+}
+.lowerRightCorner{
+    border-radius: 0 0 20px;
+}
