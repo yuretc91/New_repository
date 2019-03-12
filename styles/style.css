@@ -74,6 +74,7 @@ main{
 #leftArrow,
 #rightArrow{
     display: block;
+    cursor: pointer;
 }
 #playground{
     display: flex;

@@ -17,7 +17,8 @@ $(function () {
     for (let i = 0; i < 70;) {
         $('<img src="images/malisharikiNew/pazzle' + (++i) + '.png" alt="pazzle">').css({
             position: "absolute",
-            opacity: "0.2"
+            opacity: "0.2",
+            cursor: "pointer"
         }).appendTo(mainImage);
 
     } //создаём пазлы на игровом поле
